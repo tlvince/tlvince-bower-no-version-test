@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '0.10'
+sudo: false
+notifications:
+  email: false
+env:
+  global:
+    secure: bLgv3JCuEnswqaUsdtfOuKt938lG6QqH8q1NeuMb2FmzR5UGlW3IsKGESn/si1LVZ6zVE/Udlg6bdoanepy5zIpqiSBa0ldubngZEWDL5Cyuj8eLV6mU4Z8aJSYkn35i9YFmlzUi1J+UBm0XzQFCDDG5WygADDO4v7ec0/E8gx4=
+before_install:
+  - npm config set spin false --global
+after_success:
+  - ./scripts/bower-deploy.sh
+deploy:
+  provider: npm
+  email: npm@tlvince.com
+  skip_cleanup: true
+  api_key:
+    secure: FeEp/nOAstPanDq1DfQlN3i4efTe3MCuFbCa1grHnxd6jdsct7LYbFTtz8fJr7+w5MvBfvQAtOnxlfePJu3+QR47nrYTgq9ap1h7qN4RwyLNyJins2le4uX6JdUrgLsWNgbqiCVO4+VUfE9K3TnmH7iDMsXhAlGnySZJkPJEn78=
+  on:
+    branch: master
+    repo: tlvince/tlvince-bower-no-version-test

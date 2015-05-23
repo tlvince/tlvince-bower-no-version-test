@@ -1,0 +1,16 @@
+{
+  "name": "tlvince-bower-no-version-test",
+  "main": "dist/index.js",
+  "authors": [
+    "Tom Vincent <git@tlvince.com>"
+  ],
+  "description": "Test repo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

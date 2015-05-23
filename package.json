@@ -1,0 +1,52 @@
+{
+  "name": "tlvince-bower-no-version-test",
+  "version": "1.0.18",
+  "description": "A repo to test whether Bower handles packages without version properties correctly as described by the spec https://github.com/bower/bower.json-spec/tree/0b34d2bb0bdd4fa31fa9728f787f49e170e41f99#version",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "mkdir -p dist",
+    "build": "cp index.js dist",
+    "test": "echo 'Are you kidding?' && exit 0",
+    "prepublish": "npm run build && semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlvince/tlvince-bower-no-version-test.git"
+  },
+  "author": {
+    "name": "Tom Vincent",
+    "email": "npm@tlvince.com",
+    "url": "https://tlvince.com/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlvince/bower-no-version-test/issues"
+  },
+  "homepage": "https://github.com/tlvince/bower-no-version-test",
+  "devDependencies": {
+    "semantic-release": "^3.2.0"
+  },
+  "gitHead": "654ab2d8306e4ef50858d3a395000afd52046554",
+  "_id": "tlvince-bower-no-version-test@1.0.18",
+  "_shasum": "4c30a1d6f7242d6e41e7247b0290190177ffbb5c",
+  "_from": "tlvince-bower-no-version-test@*",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "tlvince",
+    "email": "npm@tlvince.com"
+  },
+  "maintainers": [
+    {
+      "name": "tlvince",
+      "email": "npm@tlvince.com"
+    }
+  ],
+  "dist": {
+    "shasum": "4c30a1d6f7242d6e41e7247b0290190177ffbb5c",
+    "tarball": "http://registry.npmjs.org/tlvince-bower-no-version-test/-/tlvince-bower-no-version-test-1.0.18.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/tlvince-bower-no-version-test/-/tlvince-bower-no-version-test-1.0.18.tgz",
+  "readme": "ERROR: No README data found!"
+}
